@@ -38,7 +38,7 @@ app.use('/', apiRoutes);
 
 const port = process.env.port || 3000;
 
-mongoose.connect("mongodb://localhost:27017/LabRevDB")
+mongoose.connect("mongodb+srv://briannasalvador:zX6QAI6aQdCKmvcR@labrevdb.ivomuhq.mongodb.net/LabRevDB?retryWrites=true&w=majority&appName=LabRevDB")
 .then(() => {
     console.log("Connected to the database!")
     app.listen(port, ()=>{
