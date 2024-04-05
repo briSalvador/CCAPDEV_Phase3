@@ -33,7 +33,7 @@ Using Nodejs
   node index.js
 ```
 
-Note that the server needs to be run twice initially to properly populate the database. After executing any of the commands to start the server, terminate the session and run it again. The `reservedBy` field in the seats collection should then contain the objectID of the referenced user.
 
-After starting the server, open any internet browser and type `https://localhost:3000`. You will be redirected to the home page in which you can only use its services if you are logged in.
+
+After starting the server, open any internet browser and type . You will be redirected to the home page in which you can only use its services if you are logged in.
 
