@@ -1,0 +1,47 @@
+<head>
+    <link rel="stylesheet" href="/css/profile.css">
+</head>
+<div class="page">
+    <div id="top" class="container">
+        <div class="user-profile">
+            <img src="/assets/avatar.png" alt="User Profile Picture" width="80" height="80">
+            <div class="user-info">
+                <strong id="username">User: {{user.username}} </strong>
+                <br>
+                <span id="email">Email: {{user.email}}</span>
+            </div>
+            <button id="delete" class="delete-profile-btn">Delete Profile</button>
+        </div>
+        <div id="desc" class="user-description-box">
+            <p>{{user.description}}</p>
+        </div>
+
+        <h2>My Lab Reservations</h2>
+
+        <table class="lab-reservations">
+            <thead>
+                <tr>
+                    <th>Lab</th>
+                    <th>Seat</th>
+                    <th>Day</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each seats}}
+                    <tr>
+                        <td id="labID">{{labID}}</td>
+                        <td id="seatID">{{seatID}}</td>
+                        <td id="day">{{day}}</td>
+                        <td id="startTime" hidden>{{startTime}}</td>
+                        <td id="endTime" hidden>{{endTime}}</td>
+                        <td id="timePeriod">{{startTime}} - {{endTime}}</td>
+                    </tr>
+                {{/each}}
+            </tbody>
+        </table>
+
+        <button class="edit-profile-btn">Edit Profile</button>
+    </div>
+</div>
+<script src="/js/profile.js"></script>

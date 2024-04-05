@@ -1,0 +1,38 @@
+<header>
+    <link rel="stylesheet" type="text/css" href="/css/editRes.css">
+</header>
+
+<div class="page" id="removeRes">
+    <h1 class="title">Reservations</h1>
+    <div class="viewContainer">
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="reservation-form">
+                <label for="seat-number">Seat Number:</label><br>
+                <input type="text" id="seat-number" name="seat-number"><br>
+                <label for="lab-number">Lab Number:</label><br>
+                <input type="text" id="lab-number" name="lab-number"><br>
+                <label for="day_select">Day: </label><br>
+                
+                <select class="list" name="daySelect" id="day_select">
+                    <option value="" class="btn"></option>
+                    <option value="Monday" class="btn">Monday</option>
+                    <option value="Tuesday" class="btn">Tuesday</option>
+                    <option value="Wednesday" class="btn">Wednesday</option>
+                    <option value="Thursday" class="btn">Thursday</option>
+                    <option value="Friday" class="btn">Friday</option>
+                </select><br>
+                
+                <label for="time-period">Time Period:</label><br>
+                <input type="time" id="time-in" name="time-in">
+                -
+                <input type="time" id="time-out" name="time-out"><br>
+                <button id="save" class="save">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/js/edit_res.js"></script>

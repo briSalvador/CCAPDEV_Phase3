@@ -1,0 +1,36 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/navbar.css">
+</head>
+<nav class="nav">
+    <div class="navdiv">
+        <div class="logo">WEBSITENAME</div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><div class="dropdown">
+                <a href="#" class="dropbtn">Reserve Lab</a>
+                <div class="dropdown-content">
+                    <a href="/view-slots">View Slots</a>
+                    <a href="/reserve-labs">Reserve Lab</a>
+                    <a class="admin" href="/reserve-for">Reserve for Student</a>
+                    <a class="admin" href="/remove-menu">Remove Reservation</a>
+                    <a class="admin" href="/edit-res">Edit/See Reservations</a>
+                </div>
+            </div></li>
+            <li><div class="dropdown">
+                <a href="#" class="dropbtn">Search</a>
+                <div id="short_drop" class="dropdown-content">
+                    <a href="/search-users">Search Users</a>
+                </div>
+            </div></li>
+            <li><a href="/register">Register</a></li>
+            <li><div class="dropdown">
+                <a href="#" class="dropbtn">Profile</a>
+                <div id="profile" class="dropdown-content">
+                    <a href="/user/logout" id="logout">Log out</a>
+                    <a href="/profile">View Profile</a>
+                </div>
+            </div></li>
+        </ul>
+    </div>
+</nav>
+<script src="/js/index.js"></script>

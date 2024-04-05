@@ -1,0 +1,76 @@
+<head>
+    <link rel="stylesheet" href="/css/edit-profile.css">
+</head>
+
+<div class="page">
+    <div id="top" class="container">
+        <div class="user-profile">
+            <img src="/assets/avatar.png" alt="User Profile Picture" width="80" height="80">
+            <div class="user-info">
+                <strong for="username">User: </strong>
+                <input id="username" value="{{user.username}}">
+                <br>
+                <span id="email">Email: {{user.email}}</span>
+            </div>
+            <button id="delete" class="delete-profile-btn">Delete Profile</button>
+        </div>
+        <textarea id="desc" class="user-description-box">{{user.description}}</textarea>
+
+        <h2>My Lab Reservations</h2>
+
+        <table id="lab-reservations" class="lab-reservations">
+            <thead>
+                <tr>
+                    <th>Lab</th>
+                    <th>Seat</th>
+                    <th>Day</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody id="table-data">
+                {{#each seats}}
+                    <tr>
+                        <td id="labID">{{labID}}</td>
+                        <td id="seatID">{{seatID}}</td>
+                        <td id="day">{{day}}</td>
+                        <td id="startTime" hidden>{{startTime}}</td>
+                        <td id="endTime" hidden>{{endTime}}</td>
+                        <td id="timePeriod">{{startTime}} - {{endTime}}</td>
+                    </tr>
+                {{/each}}
+            </tbody>
+        </table>
+
+        <button id="back" class="edit-profile-btn">Back</button>
+        <button id="save-changes" class="edit-profile-btn">Save Changes</button>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="reservation-form">
+                <label for="lab-number">Lab Number:</label><br>
+                <input type="text" id="lab-number" name="lab-number"><br>
+                <label for="seat-number">Seat Number:</label><br>
+                <input type="text" id="seat-number" name="seat-number"><br>
+                <label for="day_select">Day: </label><br>
+                
+                <select class="list" name="daySelect" id="day_select">
+                    <option value="" class="btn"></option>
+                    <option value="Monday" class="btn">Monday</option>
+                    <option value="Tuesday" class="btn">Tuesday</option>
+                    <option value="Wednesday" class="btn">Wednesday</option>
+                    <option value="Thursday" class="btn">Thursday</option>
+                    <option value="Friday" class="btn">Friday</option>
+                </select><br>
+                
+                <label for="time-period">Time Period:</label><br>
+                <input type="time" id="time-in" name="time-in">
+                -
+                <input type="time" id="time-out" name="time-out"><br>
+                <button type="submit" id="save" class="save">Save</button>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="/js/edit-profile.js"></script>

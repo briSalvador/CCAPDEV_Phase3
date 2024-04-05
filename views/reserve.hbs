@@ -1,0 +1,56 @@
+<header>
+    <link rel="stylesheet" type="text/css" href="/css/reserve.css">
+</header>
+<div class="page">
+    <div class="page_content">
+        <form id="r1" class="container">
+            <div class="head">
+                <div class="labs">
+                    <div class="list_head">
+                        <span id="list_t" class="header">Select Lab:</span>
+                    </div>
+                    <select id="labs" class="list" name="labSelect">
+                        <option value="" class="btn" selected> </option>
+                        <option value="Lab 300" class="btn">Lab 300</option>
+                        <option value="Lab 301" class="btn">Lab 301</option>
+                        <option value="Lab 302" class="btn">Lab 302</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="panel_container" id="form" name="form">
+                <div class="titles">
+                    <span class="t1">Time slots</span>
+                    <span class="t2">Select Day</span>
+                </div>
+                
+                <div id="left_panel" class="panel">
+                        <input class="inputTime" type="time" id="startTime" name="startTime" required>
+                        <span>&nbsp; - &nbsp;</span>
+                        <input class="inputTime" type="time" id="endTime" name="endTime" required>
+                </div>
+                
+                <select class="list" name="daySelect" id="day_select">
+                    <option value="Monday" class="btn" selected>Monday</option>
+                    <option value="Tuesday" class="btn">Tuesday</option>
+                    <option value="Wednesday" class="btn">Wednesday</option>
+                    <option value="Thursday" class="btn">Thursday</option>
+                    <option value="Friday" class="btn">Friday</option>
+                </select>
+            </div>
+
+            <div class="bottom_form" name="form2" id="form2">
+                <div class="left-bottom">
+                    <span class="text">Available Seats</span>
+                    <button type="submit" class="reserve_btn"> Reserve </button>
+                </div>
+                <div class="panel" id="bottom_panel">
+                    <ul class="seatbuttons" id="seats" name="seats">
+                        <span>Please select a lab.</span>
+                    </ul>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="/js/reserve.js"></script>

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark&family=Palanquin:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
+
+:root{
+    font-family: 'Palanquin Dark', sans-serif;
+    font-size: 18px;
+}
+
+.page{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagebg{
+    opacity: 40%;
+    z-index: 1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.webname{
+    z-index: 2;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 70px;
+    position: absolute;
+    margin-bottom: 150px;
+}
+
+.nav{
+    z-index: 4;
+}
+
+.book{
+    position: absolute;
+    margin-top: 8%;
+    z-index: 2;
+    background-color: #2C2C2C;
+    border: none;
+    border-radius: 70px;
+    padding: 0 50px 0 50px;
+    opacity: 90%;
+    height: 116px;
+    width: 426px;
+}
+
+.bookbtn{
+    font-family: 'Palanquin Dark', sans-serif;
+    color: #FAFAFA;
+    font-size: 44px;
+    opacity: 90%;
+}
+
+.bookbtn:hover{
+    opacity: 100%;
+}
+
+.book:hover{
+    opacity: 100%;
+}
+
+.t1{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.t2{
+    font-family: 'Assistant', sans-serif;
+}
+
+.info{
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text{
+    max-width: 700px;
+    margin-left: 30px;
+}
+
+.sample{
+    max-width: 600px;
+    max-height: 450px;
+    margin-right: 70px;
+    border: .01rem solid #7f7f7f;
+}
